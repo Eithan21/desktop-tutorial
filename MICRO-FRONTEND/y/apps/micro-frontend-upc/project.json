@@ -1,0 +1,92 @@
+{
+  "name": "micro-frontend-upc",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "prefix": "y",
+  "sourceRoot": "apps/micro-frontend-upc/src",
+  "tags": [],
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:application",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/micro-frontend-upc",
+        "index": "apps/micro-frontend-upc/src/index.html",
+        "browser": "apps/micro-frontend-upc/src/main.ts",
+        "polyfills": ["zone.js"],
+        "tsConfig": "apps/micro-frontend-upc/tsconfig.app.json",
+        "inlineStyleLanguage": "scss",
+        "assets": [
+          "apps/micro-frontend-upc/src/favicon.ico",
+          "apps/micro-frontend-upc/src/assets"
+        ],
+        "styles": ["apps/micro-frontend-upc/src/styles.scss"],
+        "scripts": [],
+        "server": "apps/micro-frontend-upc/src/main.server.ts",
+        "prerender": true,
+        "ssr": {
+          "entry": "apps/micro-frontend-upc/server.ts"
+        }
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "optimization": false,
+          "extractLicenses": false,
+          "sourceMap": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "buildTarget": "micro-frontend-upc:build:production"
+        },
+        "development": {
+          "buildTarget": "micro-frontend-upc:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "buildTarget": "micro-frontend-upc:build"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/{projectRoot}"],
+      "options": {
+        "jestConfig": "apps/micro-frontend-upc/jest.config.ts"
+      }
+    },
+    "serve-static": {
+      "executor": "@nx/web:file-server",
+      "options": {
+        "buildTarget": "micro-frontend-upc:build",
+        "staticFilePath": "dist/apps/micro-frontend-upc/browser"
+      }
+    }
+  }
+}

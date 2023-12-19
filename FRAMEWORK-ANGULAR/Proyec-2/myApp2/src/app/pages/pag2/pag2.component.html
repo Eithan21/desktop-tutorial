@@ -1,0 +1,23 @@
+<div style="overflow-x:auto;">
+    <app-titulos [myTitulo]="'Pagina 2'"></app-titulos>
+
+    <table>
+      <tr>
+  
+        <th>Nombre</th>
+       
+  
+      </tr>
+      <tr *ngFor="let item of pokemon">
+        <td>{{item.name}}</td>
+        <td>
+            <app-boton-upc 
+                [AnchoBoton]="'500px'"
+                [TextoBoton]= "item.url">
+            </app-boton-upc>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+<router-outlet></router-outlet>

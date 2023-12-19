@@ -1,0 +1,30 @@
+{
+  "name": "micro-frontend-upc-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/micro-frontend-upc-e2e/src",
+  "targets": {
+    "e2e": {
+      "executor": "@nx/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/micro-frontend-upc-e2e/cypress.config.ts",
+        "testingType": "e2e",
+        "devServerTarget": "micro-frontend-upc:serve:development"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "micro-frontend-upc:serve:production"
+        },
+        "ci": {
+          "devServerTarget": "micro-frontend-upc:serve-static"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"]
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["micro-frontend-upc"]
+}

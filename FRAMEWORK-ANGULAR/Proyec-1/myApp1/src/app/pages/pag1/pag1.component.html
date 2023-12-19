@@ -1,0 +1,17 @@
+<div style="overflow-x:auto;">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Materia</th>
+        <th>Abreviatura</th>
+  
+      </tr>
+      <tr *ngFor="let item of materias">
+        <td>{{item.id}}</td>
+        <td>{{item.nombremateria}}</td>
+        <td>{{item.abreviaturamateria}}</td>
+      </tr>
+    </table>
+  </div>
+
+<router-outlet></router-outlet>

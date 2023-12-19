@@ -1,0 +1,15 @@
+
+<h2>My Customers</h2>
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+
+<table id="myTable">
+  <tr class="header">
+    <th style="width:60%;">Name</th>
+  </tr>
+  <tr *ngFor="let item of Users">
+    <td>{{item.name}}</td>
+  </tr>
+</table>
+<angular-monorepo-menu></angular-monorepo-menu>
+<router-outlet></router-outlet>

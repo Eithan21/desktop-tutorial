@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "materias":
+    [
+      {"id": 1, "nombremateria": "Matemáticas", "abreviaturamateria": "Mat"},
+      {"id": 2, "nombremateria": "Ciencias Naturales", "abreviaturamateria": "CN"},
+      {"id": 3, "nombremateria": "Lengua Española", "abreviaturamateria": "LE"},
+      {"id": 4, "nombremateria": "Historia", "abreviaturamateria": "His"},
+      {"id": 5, "nombremateria": "Geografía", "abreviaturamateria": "Geo"},
+      {"id": 6, "nombremateria": "Física", "abreviaturamateria": "Fis"},
+      {"id": 7, "nombremateria": "Química", "abreviaturamateria": "Qui"},
+      {"id": 8, "nombremateria": "Educación Física", "abreviaturamateria": "EF"},
+      {"id": 9, "nombremateria": "Arte", "abreviaturamateria": "Art"},
+      {"id": 10, "nombremateria": "Música", "abreviaturamateria": "Mus"},
+      {"id": 11, "nombremateria": "Informática", "abreviaturamateria": "Info"},
+      {"id": 12, "nombremateria": "Ética", "abreviaturamateria": "Eti"},
+      {"id": 13, "nombremateria": "Religión", "abreviaturamateria": "Rel"},
+      {"id": 14, "nombremateria": "Economía", "abreviaturamateria": "Eco"},
+      {"id": 15, "nombremateria": "Biología", "abreviaturamateria": "Bio"},
+      {"id": 16, "nombremateria": "Inglés", "abreviaturamateria": "Ing"},
+      {"id": 17, "nombremateria": "Francés", "abreviaturamateria": "Fra"},
+      {"id": 18, "nombremateria": "Alemán", "abreviaturamateria": "Ale"},
+      {"id": 19, "nombremateria": "Filosofía", "abreviaturamateria": "Fil"},
+      {"id": 20, "nombremateria": "Psicología", "abreviaturamateria": "Psi"}
+    ],
+    "estudiantes":[
+      {"id": 1, "nombreestudiante": "Juan Pérez", "edad": 18},
+      {"id": 2, "nombreestudiante": "María Gómez", "edad": 20},
+      {"id": 3, "nombreestudiante": "Carlos Rodríguez", "edad": 19},
+      {"id": 4, "nombreestudiante": "Laura Martínez", "edad": 21},
+      {"id": 5, "nombreestudiante": "Luisa Torres", "edad": 22},
+      {"id": 6, "nombreestudiante": "Pedro Sánchez", "edad": 18},
+      {"id": 7, "nombreestudiante": "Ana González", "edad": 20},
+      {"id": 8, "nombreestudiante": "David López", "edad": 19},
+      {"id": 9, "nombreestudiante": "Isabel Ramírez", "edad": 21},
+      {"id": 10, "nombreestudiante": "Miguel Herrera", "edad": 22},
+      {"id": 11, "nombreestudiante": "Sofía Castro", "edad": 18},
+      {"id": 12, "nombreestudiante": "Javier Ruiz", "edad": 20},
+      {"id": 13, "nombreestudiante": "Carmen Díaz", "edad": 19},
+      {"id": 14, "nombreestudiante": "Pablo Vargas", "edad": 21},
+      {"id": 15, "nombreestudiante": "Elena Moreno", "edad": 22},
+      {"id": 16, "nombreestudiante": "Francisco Jiménez", "edad": 18},
+      {"id": 17, "nombreestudiante": "Raquel Silva", "edad": 20},
+      {"id": 18, "nombreestudiante": "José Torres", "edad": 19},
+      {"id": 19, "nombreestudiante": "Alicia García", "edad": 21},
+      {"id": 20, "nombreestudiante": "Gabriel Medina", "edad": 22}
+    ]
+    
+  
+}

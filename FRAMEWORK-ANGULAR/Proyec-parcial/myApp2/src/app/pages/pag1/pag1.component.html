@@ -1,0 +1,23 @@
+<div style="overflow-x:auto;">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Edad</th>
+  
+      </tr>
+      <tr *ngFor="let item of estudiantes">
+        <td>{{item.id}}</td>
+        <td>{{item.nombreestudiante}}</td>
+        
+        <td>
+            <app-boton-upc 
+                [AnchoBoton]="'70px'"
+                [TextoBoton]= "item.edad">
+            </app-boton-upc>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+<router-outlet></router-outlet>
