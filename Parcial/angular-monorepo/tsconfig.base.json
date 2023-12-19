@@ -15,7 +15,9 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@angular-monorepo/menu": ["libs/menu/src/index.ts"]
+      "@angular-monorepo/menu": ["libs/menu/src/index.ts"],
+      "@angular-monorepo/menu2": ["libs/menu2/src/index.ts"],
+      "@angular-monorepo/nav": ["libs/nav/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
