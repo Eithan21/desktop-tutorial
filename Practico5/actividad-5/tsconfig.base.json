@@ -1,0 +1,26 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "rootDir": ".",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2020", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@actividad-5/Filter-List": ["libs/Filter-List/src/index.ts"],
+      "@actividad-5/curtain-menu": ["libs/curtain-menu/src/index.ts"],
+      "@actividad-5/filter-table": ["libs/filter-table/src/index.ts"],
+      "@actividad-5/mega-menu": ["libs/mega-menu/src/index.ts"],
+      "@actividad-5/mobile-navbar": ["libs/mobile-navbar/src/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "tmp"]
+}
